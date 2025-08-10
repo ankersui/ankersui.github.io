@@ -3,3 +3,43 @@
     <!-- 여기 버튼들 들어갈 예정 -->
 </div>
 
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Setlist Links</title>
+<style>
+  body {
+    margin: 0;
+    background: url('setlist.png') no-repeat center center;
+    background-size: contain; /* 원본 비율 유지 */
+    height: 100vh;
+    position: relative;
+  }
+  .btn {
+    position: absolute;
+    bottom: 50px; /* 버튼이 붙는 세로 위치 (이미지 하단 기준) */
+    width: 80px;  /* 각 칸의 가로 크기 */
+    height: 120px; /* 각 칸의 세로 크기 */
+    background-color: rgba(255, 255, 255, 0); /* 완전 투명 */
+    cursor: pointer;
+  }
+  /* 칸별 위치 조정 (left 값만 변경) */
+  .btn1 { left: 30%; }
+  .btn2 { left: 38%; }
+  .btn3 { left: 46%; }
+  .btn4 { left: 54%; }
+  .btn5 { left: 62%; }
+  .btn6 { left: 70%; }
+</style>
+</head>
+<body>
+  <a href="https://example1.com" class="btn btn1"></a>
+  <a href="https://example2.com" class="btn btn2"></a>
+  <a href="https://example3.com" class="btn btn3"></a>
+  <a href="https://example4.com" class="btn btn4"></a>
+  <a href="https://example5.com" class="btn btn5"></a>
+  <a href="https://example6.com" class="btn btn6"></a>
+</body>
+</html>
+
