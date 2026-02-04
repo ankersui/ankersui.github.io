@@ -1,51 +1,46 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <title>My Works</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      background: #f5f5f5;
-      padding: 40px;
-    }
+<meta charset="UTF-8">
+<title>Works</title>
 
-    h1 {
-      text-align: center;
-    }
+<style>
+body {
+  margin: 0;
+  background-color: white; /* 배경색 */
+  font-family: sans-serif;
+}
 
-    .work {
-      background: white;
-      padding: 20px;
-      margin: 20px auto;
-      width: 60%;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
+/* 이미지들을 담는 영역 */
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 150px;
+}
 
-    .work a {
-      text-decoration: none;
-      color: black;
-    }
+/* 작품 이미지 */
+.gallery img {
+  width: 180px;   /* 크기는 취향대로 조절 */
+  cursor: pointer;
+  transition: transform 0.3s;
+}
 
-    .work:hover {
-      transform: scale(1.02);
-    }
-  </style>
+.gallery img:hover {
+  transform: scale(1.05);
+}
+</style>
 </head>
+
 <body>
 
-  <h1>📁 My Works</h1>
-
-  <div class="work">
-    <h2><a href="works1.html">작품 1 : 개인 사이트</a></h2>
-    <p>HTML로 만든 포트폴리오 웹사이트</p>
-  </div>
-
-  <div class="work">
-    <h2><a href="works2.html">작품 2 : AI 프로젝트</a></h2>
-    <p>음성 인식 실험 프로젝트</p>
-  </div>
+<div class="gallery">
+  <a href="works1.html"><img src="001.png" alt="작품1"></a>
+  <a href="works2.html"><img src="002.png" alt="작품2"></a>
+  <a href="works3.html"><img src="003.png" alt="작품3"></a>
+  <a href="works4.html"><img src="004.png" alt="작품4"></a>
+  <a href="works5.html"><img src="005.png" alt="작품5"></a>
+</div>
 
 </body>
 </html>
