@@ -1,40 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <title>My Works</title>
   <style>
     body {
       font-family: sans-serif;
-      background: #f3f3f3;
+      background: #f5f5f5;
       padding: 40px;
+    }
+
+    h1 {
+      text-align: center;
     }
 
     .work {
       background: white;
       padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 12px;
+      margin: 20px auto;
+      width: 60%;
+      border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
 
-    a {
+    .work a {
       text-decoration: none;
       color: black;
+    }
+
+    .work:hover {
+      transform: scale(1.02);
     }
   </style>
 </head>
 <body>
-  <h1>🎨 My Works</h1>
 
-  <div class="works">
-    <h2><a href="works1.html">작품 1: 개인 사이트</a></h2>
-    <p>HTML로 만든 포트폴리오</p>
+  <h1>📁 My Works</h1>
+
+  <div class="work">
+    <h2><a href="works1.html">작품 1 : 개인 사이트</a></h2>
+    <p>HTML로 만든 포트폴리오 웹사이트</p>
   </div>
 
   <div class="work">
-    <h2><a href="works2.html">작품 2: AI 프로젝트</a></h2>
-    <p>음성 인식 실험</p>
+    <h2><a href="works2.html">작품 2 : AI 프로젝트</a></h2>
+    <p>음성 인식 실험 프로젝트</p>
   </div>
+
 </body>
 </html>
+
