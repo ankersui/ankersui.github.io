@@ -4,11 +4,15 @@
 <meta charset="UTF-8">
 <title>Works</title>
 
+<!-- Pretendard 불러오기 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+
 <style>
 body {
   margin: 0;
   background: white;
   height: 100vh;
+  font-family: "Pretendard", sans-serif;
 }
 
 /* 전체 레이아웃 */
@@ -16,17 +20,18 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* 세로 중앙 */
-  align-items: center;     /* 가로 중앙 */
+  justify-content: center;
+  align-items: center;
 }
 
 /* 위 텍스트 */
 .works-text {
   text-align: center;
   max-width: 900px;
-  margin-bottom: 120px; /* 글과 이미지 사이 거리 */
+  margin-bottom: 120px;
   font-size: 14px;
-  line-height: 1.8;
+  line-height: 1.25;   /* 줄 간격 좁게 */
+  font-weight: 700;    /* Bold */
 }
 
 /* 갤러리 */
@@ -44,27 +49,11 @@ body {
 .gallery img {
   width: 200px;
   height: auto;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s;
   cursor: pointer;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+  box-shadow: none;
 }
 
-/* hover 효과 */
-.gallery img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 16px 28px rgba(0,0,0,0.3);
-}
-
-/* 가운데 이미지 강조 (선택) */
-.gallery img:nth-child(3) {
-  transform: scale(1.05);
-}
-
-/* 양쪽 살짝 위로 (선택) */
-.gallery img:first-child,
-.gallery img:last-child {
-  transform: translateY(-20px);
-}
 </style>
 </head>
 
