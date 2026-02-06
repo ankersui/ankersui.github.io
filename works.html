@@ -7,51 +7,62 @@
 <style>
 body {
   margin: 0;
-  overflow: hidden;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-.container {
-  position: relative;
-  width: 100%;
+/* 전체 묶음 */
+.gallery {
+  display: flex;
+  gap: 40px;
 }
 
-/* 배경 이미지 (인디자인에서 만든 전체 화면 이미지) */
-.bg {
-  width: 100%;
-  height: auto;
+/* 링크 */
+.gallery a {
   display: block;
 }
 
-/* 클릭 영역 공통 스타일 */
-.link {
-  position: absolute;
-  top: 50%;        /* 위치 조절 */
-  width: 12%;
-  height: 40%;
+/* 이미지 */
+.gallery img {
+  width: 200px;   /* 블럭 크기 조절 */
+  height: auto;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
 }
 
-/* 각각 위치 따로 조절 */
-.link1 { left: 10%; }
-.link2 { left: 28%; }
-.link3 { left: 46%; }
-.link4 { left: 64%; }
-.link5 { left: 82%; }
-
+/* 마우스 올리면 */
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
 </style>
 </head>
 
 <body>
 
-<div class="container">
-  <!-- 배경 이미지 -->
-  <img src="works-bg01.png" class="bg">
+<div class="gallery">
+  <a href="works1.html">
+    <img src="001.png" alt="작품1">
+  </a>
 
-  <!-- 클릭 영역들 -->
-  <a href="works1.html" class="link link1"></a>
-  <a href="works2.html" class="link link2"></a>
-  <a href="works3.html" class="link link3"></a>
-  <a href="works4.html" class="link link4"></a>
-  <a href="works5.html" class="link link5"></a>
+  <a href="works2.html">
+    <img src="002.png" alt="작품2">
+  </a>
+
+  <a href="works3.html">
+    <img src="003.png" alt="작품3">
+  </a>
+
+  <a href="works4.html">
+    <img src="004.png" alt="작품4">
+  </a>
+
+  <a href="works5.html">
+    <img src="005.png" alt="작품5">
+  </a>
 </div>
 
 </body>
