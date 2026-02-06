@@ -8,13 +8,28 @@
 body {
   margin: 0;
   background: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100vh;
 }
 
-/* 전체 묶음 */
+/* 전체 레이아웃 */
+.works-wrap {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 세로 중앙 */
+  align-items: center;     /* 가로 중앙 */
+}
+
+/* 위 텍스트 */
+.works-text {
+  text-align: center;
+  max-width: 900px;
+  margin-bottom: 120px; /* 글과 이미지 사이 거리 */
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* 갤러리 */
 .gallery {
   display: flex;
   gap: 40px;
@@ -27,42 +42,51 @@ body {
 
 /* 이미지 */
 .gallery img {
-  width: 200px;   /* 블럭 크기 조절 */
+  width: 200px;
   height: auto;
   transition: transform 0.3s, box-shadow 0.3s;
   cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
 }
 
-/* 마우스 올리면 */
+/* hover 효과 */
 .gallery img:hover {
   transform: scale(1.05);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  box-shadow: 0 16px 28px rgba(0,0,0,0.3);
+}
+
+/* 가운데 이미지 강조 (선택) */
+.gallery img:nth-child(3) {
+  transform: scale(1.05);
+}
+
+/* 양쪽 살짝 위로 (선택) */
+.gallery img:first-child,
+.gallery img:last-child {
+  transform: translateY(-20px);
 }
 </style>
 </head>
 
 <body>
 
-<div class="gallery">
-  <a href="works1.html">
-    <img src="001.png" alt="작품1">
-  </a>
+<div class="works-wrap">
 
-  <a href="works2.html">
-    <img src="002.png" alt="작품2">
-  </a>
+  <div class="works-text">
+    염세한 시선<br>
+    할 말 못 할 말 가릴 줄 아는 것이 더 영악하다고 난 어차피 조증 온 환자고 네 얘길 들어줄 의무는 없어<br>
+    웃기지 나도 알아 존나 들떠서 내가 하는 말은 다 뭉개지고 결국 남는 건 빻인 악의 가루들 뿐이다 넌 지폐로 빨아들이는데<br>
+    그렇다고 네 과거를 잊을 수 있을 것 같니?
+  </div>
 
-  <a href="works3.html">
-    <img src="003.png" alt="작품3">
-  </a>
+  <div class="gallery">
+    <a href="works1.html"><img src="001.png"></a>
+    <a href="works2.html"><img src="002.png"></a>
+    <a href="works3.html"><img src="003.png"></a>
+    <a href="works4.html"><img src="004.png"></a>
+    <a href="works5.html"><img src="005.png"></a>
+  </div>
 
-  <a href="works4.html">
-    <img src="004.png" alt="작품4">
-  </a>
-
-  <a href="works5.html">
-    <img src="005.png" alt="작품5">
-  </a>
 </div>
 
 </body>
